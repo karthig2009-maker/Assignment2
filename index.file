@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu Police Department - Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+        }
+
+        .login-box {
+            width: 360px;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: #1b3a57;
+        }
+
+        .subtitle {
+            margin-bottom: 25px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1b3a57;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 18px;
+            border: none;
+            border-radius: 6px;
+            background: #1b3a57;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #142d43;
+        }
+
+        .demo-note {
+            margin-top: 18px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>Tamil Nadu Police Department</h1>
+
+        <div class="subtitle">
+            Login
+        </div>
+
+        <form onsubmit="return demoLogin(event)">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                autocomplete="off"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <div class="demo-note">
+            Demo / Mockup Page
+        </div>
+
+    </div>
+
+    <script>
+        function demoLogin(event) {
+            event.preventDefault();
+
+            alert("Demo login button clicked.");
+            return false;
+        }
+    </script>
+
+</body>
+</html>
