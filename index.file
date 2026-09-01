@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamil Nadu Police Department - Login</title>
+    <title>Tamil Nadu Police Department - Demo</title>
 
     <style>
         * {
@@ -14,37 +14,45 @@
             margin: 0;
             min-height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             font-family: Arial, sans-serif;
-            background: #f2f4f7;
+            background: #eef1f5;
         }
 
-        .login-box {
-            width: 360px;
-            padding: 35px;
+        .login-container {
+            width: 380px;
             background: white;
+            padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
 
-        h1 {
-            font-size: 22px;
-            margin-bottom: 8px;
-            color: #1b3a57;
+        /* Logo placeholder */
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border: 2px dashed #777;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 13px;
         }
 
-        .subtitle {
-            margin-bottom: 25px;
-            color: #777;
-            font-size: 14px;
+        h1 {
+            font-size: 21px;
+            color: #1d3557;
+            margin: 10px 0 25px;
         }
 
         input {
             width: 100%;
             padding: 13px;
-            margin: 8px 0;
+            margin-bottom: 14px;
             border: 1px solid #ccc;
             border-radius: 6px;
             font-size: 15px;
@@ -52,28 +60,36 @@
 
         input:focus {
             outline: none;
-            border-color: #1b3a57;
+            border-color: #1d3557;
         }
 
         button {
             width: 100%;
             padding: 13px;
-            margin-top: 18px;
             border: none;
             border-radius: 6px;
-            background: #1b3a57;
+            background: #1d3557;
             color: white;
             font-size: 16px;
             cursor: pointer;
         }
 
         button:hover {
-            background: #142d43;
+            background: #14263d;
         }
 
-        .demo-note {
-            margin-top: 18px;
-            font-size: 12px;
+        .department-name {
+            margin-top: 25px;
+            padding-top: 18px;
+            border-top: 1px solid #ddd;
+            font-weight: bold;
+            color: #1d3557;
+            font-size: 15px;
+        }
+
+        .demo-label {
+            margin-top: 8px;
+            font-size: 11px;
             color: #888;
         }
     </style>
@@ -81,19 +97,19 @@
 
 <body>
 
-    <div class="login-box">
+    <div class="login-container">
 
-        <h1>Tamil Nadu Police Department</h1>
-
-        <div class="subtitle">
-            Login
+        <!-- Replace this placeholder only with an appropriately licensed logo -->
+        <div class="logo">
+            LOGO
         </div>
+
+        <h1>Login</h1>
 
         <form onsubmit="return demoLogin(event)">
 
             <input
                 type="text"
-                id="username"
                 placeholder="Username"
                 autocomplete="off"
                 required
@@ -101,18 +117,23 @@
 
             <input
                 type="password"
-                id="password"
                 placeholder="Password"
                 autocomplete="off"
                 required
             >
 
-            <button type="submit">Login</button>
+            <button type="submit">
+                Login
+            </button>
 
         </form>
 
-        <div class="demo-note">
-            Demo / Mockup Page
+        <div class="department-name">
+            Tamil Nadu Police Department
+        </div>
+
+        <div class="demo-label">
+            DEMO / MOCKUP
         </div>
 
     </div>
@@ -120,9 +141,7 @@
     <script>
         function demoLogin(event) {
             event.preventDefault();
-
             alert("Demo login button clicked.");
-            return false;
         }
     </script>
 
